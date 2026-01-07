@@ -3,8 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ["i.imgur.com"]
-  },com
+    remotePatterns: [new URL("https://i.imgur.com/**")],
+  },
 };
 
-export default nextConfig;
