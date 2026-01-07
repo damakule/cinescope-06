@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { inter, roboto_mono } from "./font";
@@ -21,11 +22,11 @@ export default function RootLayout({
         className={`${inter.variable} ${roboto_mono.variable} antialiased font-inter`}
       >
         <div className="flex flex-col min-h-screen">
-          <Header />
           {/* <Header /> */}
+          <Header />
           {children}
-          <Footer />
           {/* <Footer /> */}
+          <Footer />
         </div>
       </body>
     </html>
